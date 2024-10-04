@@ -5,7 +5,7 @@ pygame.init()
 screen = pygame.display.set_mode((larghezza, altezza))
 clock = pygame.time.Clock()
 
-icon = pygame.image.load("pacman.png")
+icon = pygame.image.load("img/pacman.png")
 pygame.display.set_icon(icon)
 
 running = True
