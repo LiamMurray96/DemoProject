@@ -8,7 +8,7 @@ running = True
 dt = 0
 
 #carico font
-font = pygame.font.Font(None, 50)
+font = pygame.font.Font(None, 36)
 
 #render testo
 testo = font.render('Benvenuti nel nostro gioco', True, "black")
