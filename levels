@@ -1,0 +1,5 @@
+levels = {
+    1: {"map":"level1_map.png", "goal":"collect_all_items"},
+    2: {"map":"level2_map.png", "goal":""}
+    
+}
