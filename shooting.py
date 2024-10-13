@@ -84,7 +84,7 @@ class Game:
             self.run_logic(dt)
             self.draw()
 
-    def handle_events(self, dt):
+    def handle_events(self):
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
                 self.done = True
@@ -102,3 +102,7 @@ class Game:
         self.screen.fill(BG_COLOR)
         self.all_sprites.draw(self.screen)
         pygame.display.flip()
+
+if __name__ == '__main__':
+    Game().run()
+    pygame.quit()
