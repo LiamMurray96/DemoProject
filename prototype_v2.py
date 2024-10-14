@@ -6,7 +6,7 @@ WIDTH, HEIGHT = 800, 600
 class Personaggio(pygame.sprite.Sprite):
     def __init__(self, x, y):
         super().__init__()
-        self.image = pygame.image.load('image/aliennave.png')
+        self.image = pygame.image.load('img/image/aliennave.png')
         self.image = pygame.transform.scale(self.image, (100,100))
 
         self.rect = self.image.get_rect()
@@ -40,10 +40,10 @@ gruppo_di_personaggi.add(personaggio)
 
 screen = pygame.display.set_mode((WIDTH,HEIGHT))
 pygame.display.set_caption("Alien Revenge")
-bg = pygame.image.load("image/nuovospace.png")
+bg = pygame.image.load("img/image/nuovospace.png")
 bgX = 0
 bgX2 = bg.get_width()
-menubg = pygame.image.load("image/alienisolation.png")
+menubg = pygame.image.load("img/image/alienisolation.png")
 menubg = pygame.transform.scale(menubg, (800, 600))
 
 orologio = pygame.time.Clock()
@@ -82,21 +82,21 @@ button_surface1 = pygame.Surface((200, 200))
 text1 = font.render("Nave uno", True, (0, 0, 0))
 text_rect1 = text1.get_rect(center=(button_surface1.get_width()/2, 25))
 button_rect1 = pygame.Rect(100, 200, 200, 200) 
-scelta1 = pygame.image.load('image/aliennave.png')
+scelta1 = pygame.image.load('img/image/aliennave.png')
 scelta1 = pygame.transform.scale(scelta1, (150, 150))
 #Bottone seconda scelta
 button_surface2 = pygame.Surface((200, 200))
 text2 = font.render("Nave due", True, (0, 0, 0))
 text_rect2 = text2.get_rect(center=(button_surface2.get_width()/2, 25))
 button_rect2 = pygame.Rect(310, 200, 200, 200) 
-scelta2 = pygame.image.load('image/ship.png')
+scelta2 = pygame.image.load('img/image/ship.png')
 scelta2 = pygame.transform.scale(scelta2, (150, 150))
 #Bottone terza scelta
 button_surface3 = pygame.Surface((200, 200))
 text3 = font.render("Nave tre", True, (0, 0, 0))
 text_rect3 = text3.get_rect(center=(button_surface3.get_width()/2, 25))
 button_rect3 = pygame.Rect(520, 200, 200, 200) 
-scelta3 = pygame.image.load('image/bird.png')
+scelta3 = pygame.image.load('img/image/bird.png')
 scelta3 = pygame.transform.scale(scelta3, (150, 150))
 
 vite = 3
