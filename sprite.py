@@ -49,8 +49,6 @@ class Personaggio(pygame.sprite.Sprite):
 personaggio = Personaggio(100, 100)
 altropersonaggio = Personaggio(400, 400)
 
-if personaggio.rect.colliderect(altropersonaggio.rect):
-    screen.fill("red")
 
 #gruppo di sprite per gestione facilitata
 gruppo_di_personaggi = pygame.sprite.Group()
@@ -82,6 +80,9 @@ while running:
                 personaggio.cambia_velocita(0, 5)
             if event.key == pygame.K_DOWN:
                 personaggio.cambia_velocita(0, -5)
+        if personaggio.rect.colliderect(altropersonaggio.rect):
+            screen.fill("red")
+
 
     gruppo_di_personaggi.update()
 
